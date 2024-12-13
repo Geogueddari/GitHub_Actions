@@ -7,8 +7,6 @@ import java.time.LocalDate;
 
 import org.junit.Test;
 
-
-
 public class PersonConstructorsGettersSettersTest {
 
     @Test
@@ -23,6 +21,7 @@ public class PersonConstructorsGettersSettersTest {
         assertEquals("abdeljabbar", abdeljabbar.getFirstName());
         assertEquals("elgaddari", abdeljabbar.getLastName());
         assertEquals(LocalDate.of(2004, 4, 5), abdeljabbar.getBirthDate());
+        assertEquals(LocalDate.now().getYear() - abdeljabbar.getBirthDate().getYear(), abdeljabbar.calculateAge());
 
     }
 }

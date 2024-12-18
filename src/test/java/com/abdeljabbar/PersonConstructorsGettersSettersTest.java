@@ -29,6 +29,6 @@ public class PersonConstructorsGettersSettersTest {
         assertEquals(LocalDate.now().getYear() - abdeljabbar.getBirthDate().getYear(), abdeljabbar.calculateAge());
         //test with assertJ
         assertThat(abdeljabbar.getFirstName()).isEqualTo("abdeljabbar");
-
+        assertThat(abdeljabbar.getFirstName()).isEqualTo("abdeljabba");
     }
 }
